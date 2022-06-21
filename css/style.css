@@ -669,7 +669,7 @@ label.error {
 
 .header-contacts {
 	font-weight: bold;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-size: .875rem;
 	color: #fff;
 }
