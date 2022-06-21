@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -20,7 +21,9 @@
 
   <!-- Main CSS -->
   <link href="css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
@@ -31,7 +34,68 @@
   <meta name="msapplication-TileColor" content="#222222">
   <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
   <meta name="theme-color" content="#000">
+  <style>
+    .f-20 {
+      font-size: 20px;
+    }
 
+    .feature-items {
+      padding: 20px 10px;
+      color: #FFFFFF;
+      clear: both;
+      -webkit-transition: all 300ms linear;
+      -moz-transition: all 300ms linear;
+      -o-transition: all 300ms linear;
+      -ms-transition: all 300ms linear;
+      transition: all 300ms linear;
+    }
+
+    .feature-items:hover {
+      background-color: #F9F9F9;
+      border-radius: 5px;
+      color: #000;
+    }
+
+    .feature-items i,
+    .feature-item i {
+      display: inline-block;
+      font-size: 30px;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      color: #eec400;
+      overflow: hidden;
+      border: 2px solid #FFFFFF;
+      border-radius: 50%;
+      box-shadow: 0 0 0 2px #eec400;
+      margin-bottom: 10px;
+      -webkit-transition: all 300ms linear;
+      -moz-transition: all 300ms linear;
+      -o-transition: all 300ms linear;
+      -ms-transition: all 300ms linear;
+      transition: all 300ms linear;
+    }
+
+    .feature-items:hover i,
+    .feature-item:hover i {
+      color: #ffffff;
+      background: #eec400;
+    }
+
+    .feature-items h5 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+
+    .features-left,
+    .features-right {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 
 <body class="body-copyright-light">
@@ -48,7 +112,7 @@
       <div class="container-fluid clearfix">
         <div class="brand">
           <a href="index.html">
-            <div class="brand-name font-custom">Investlytics</div>
+            <div class="brand-name font-custom"><img src="images/logo.svg" alt="" srcset=""></div>
           </a>
         </div>
 
@@ -61,16 +125,16 @@
 
         <div class="header-content d-none d-md-block">
           <div class="row">
-            <div class="col-md-3">
-                <!-- <div class="header-tagline">New <br /> design</div> -->
+            <div class="col-md-2">
+              <!-- <div class="header-tagline">New <br /> design</div> -->
             </div>
-            <div class="col-md-9">
+            <div class="col-md-10">
               <div class="header-contacts">
-               <div class="header-contact-item">Contact Us:&nbsp; <a href="tel:+918920656746" class="phone-link">(+91)
-                      892 065 6746</a></div>
+                <div class="header-contact-item">Contact Us:&nbsp; <a href="tel:+918920656746" class="phone-link">(+91)
+                  892 065 6746</a></div>
                 <div class="header-contact-divider">/</div>
-                <div class="header-contact-item"><a href="mailto:Contact@investlytics.in"
-                    class="mail-link">Contact@investlytics.in</a></div>
+                <div class="header-contact-item"><a href="mailto: Contact@investlytics.in"
+                    class="mail-link"> Contact@investlytics.in</a></div>
                 <div class="header-contact-divider">/</div>
                 <div class="header-contact-item">
 
@@ -91,29 +155,26 @@
 
       <div class="menu">
         <div class="menu-lang">
-           <!-- <a href="#" class="menu-lang-item active">Eng</a>
+          <!-- <a href="#" class="menu-lang-item active">Eng</a>
           <a href="#" class="menu-lang-item">fra</a>
           <a href="#" class="menu-lang-item">ger</a> -->
         </div>
 
         <nav class="menu-main" id="accordion">
           <ul id="menuMain">
-            <li data-menuanchor="Intro" class="active"><a href="index.html">Intro</a></li>
-            <li data-menuanchor="Services"><a href="#Services">Services</a></li>
-            <li data-menuanchor="Projects"><a href="project.html">Projects</a></li>
- <li data-menuanchor="BLOG"><a href="Blog.html">Blog</a></li>                     <li data-menuanchor="Experience"><a href="#Experience">Careers</a></li>
-
-            <li data-menuanchor="Clients"><a href="client.html">Clients</a></li>
+            <li data-menuanchor="Intro" class="active"><a href="index.html">home</a></li>
+            <li data-menuanchor="Services"><a href="about-us.html">About Us</a></li>
+            <!-- <li data-menuanchor="Projects"><a href="project.html">Projects</a></li> -->
+            <!-- <li data-menuanchor="BLOG"><a href="Blog.html">Blog</a></li> -->
+            <!-- <li data-menuanchor="Experience"><a href="Careers.html">Careers</a></li> -->
+            <!-- <li data-menuanchor="Clients"><a href="client.html">Clients</a></li> -->
             <li data-menuanchor="Team"><a href="team.html">Team</a></li>
             <li data-menuanchor="Contact"><a href="customor-form.html">Contact</a></li>
-
             <li>
-
-              <button type="button" class="btn btn-danger "><a href="" class=""> <i class="fa fa-user"
+              <button type="button" class="btn btn-warning "><a href="" class=""> <i class="fa fa-user"
                     aria-hidden="true"></i> Login </a></button>
-              <button type="button" class="btn btn-outline-danger"><a href="" class="text-black-50"> Sign
+              <button type="button" class="btn btn-outline-warining"><a href="" class="text-black-50"> Sign
                   up</a></button>
-
             </li>
           </ul>
         </nav>
@@ -121,7 +182,7 @@
         <div class="menu-footer">
           <ul class="social social-rounded">
             <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
-            <li><a href="#"><i class="lni lni-behance-original"></i></a></li>
+            <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
             <li><a href="#"><i class="lni lni-instagram-original"></i></a></li>
           </ul>
           <div class="menu-copyright">&copy; Investlytics 2022<br /> All Rights Reserved</div>
@@ -132,81 +193,164 @@
 
     <div id="content" class="content">
       <div class="homepage-personal a-pagepiling">
-  
+
 
         <div class="section pp-scrollable slide-dark slide-personal-experience">
           <div class="slide-container">
             <div class="slide-bg">
               <div class="slide-photo slide-experience-image1"></div>
-              <div class="slide-photo slide-experience-image2"></div>
-              <div class="slide-photo slide-experience-image3"></div>
+              <div class="slide-photo slide-experience-image2 mt-5 pt-5"></div>
+              <!-- <div class="slide-photo slide-experience-image3"></div> -->
             </div>
             <div class="container">
               <div class="slide-num"></div>
               <div class="row align-items-center mb-4 animate-element delay5 fadeInDown">
                 <div class="col-8">
-                  <h2 class="slide-title mb-0">Pricing</h2>
+                  <h2 class="slide-title mb-0 py-5">Retail Investor Portal </h2>
                 </div>
                 <div class="col-4 text-right">
                   <div class="a-carousel-nav carousel-nav"></div>
                 </div>
               </div>
-              <div class="animate-element delay5 fadeInUp">
-                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                  <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm">
-                      <div class="card-header py-3">
-                        <h4 class="my-0 fw-normal">Free</h4>
-                      </div>
-                      <div class="card-body">
-                        <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
-                        <ul class="list-unstyled mt-3 mb-4">
-                          <li>10 users included</li>
-                          <li>2 GB of storage</li>
-                          <li>Email support</li>
-                          <li>Help center access</li>
-                        </ul>
-                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
-                      </div>
-                    </div>
+              <div class="animate-element delay5 fadeInUp row">
+                <h3 class="slide-title-sub">Do you want to
+                </h3>
+                <div class="slide-descr slide-descr-intro f-20 ">
+                  <div class="py-3 w-100">
+                    <ul style="list-style: none;">
+                      <li> <i class="fas fa-hand-point-right mr-3"></i>Understand nuances of the stock market
+                      </li>
+                      <li> <i class="fas fa-hand-point-right mr-3"></i>Review the impact of a buying/selling an investment before actioning it
+                      </li>
+                      <li><i class="fas fa-hand-point-right mr-3"></i>Create in-depth reports
+                      </li>
+                      <li> <i class="fas fa-hand-point-right mr-3"></i>Use a single platform that provides most of the market analytics and portfolio management services
+                      </li>
+                    </ul>
                   </div>
-                  <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm">
-                      <div class="card-header py-3">
-                        <h4 class="my-0 fw-normal">Pro</h4>
-                      </div>
-                      <div class="card-body">
-                        <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
-                        <ul class="list-unstyled mt-3 mb-4">
-                          <li>20 users included</li>
-                          <li>10 GB of storage</li>
-                          <li>Priority email support</li>
-                          <li>Help center access</li>
-                        </ul>
-                        <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
-                      </div>
-                    </div>
+
+                   InvestLytics Built For Retail Investors. 
+                </div>
+
+              </div>
+              <div class="row">
+                <h3 class="slide-title-sub">Key Features
+                </h3>
+              </div>
+              <div class="features row">
+
+              
+                <!-- FEATURES LEFT SIDE -->
+                <div class="col-sm-4 features-left text-right wow fadeInLeft" data-wow-offset="10"
+                  data-wow-duration="1.5s"
+                  style="visibility: visible;-webkit-animation-duration: 1.5s; -moz-animation-duration: 1.5s; animation-duration: 1.5s;">
+                  <!-- FEATURE -->
+                  <div class="feature-items">
+                    <!-- ICON -->
+                    <i class="features-icon fa fa-heart-o"></i>
+
+                    <!-- <h5>Build with love</h5> -->
+                    <p>
+                      Consolidated and portfolio-wise view of all your investments irrespective of advisor, or investment platform
+                    </p>
                   </div>
-                  <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                      <div class="card-header py-3 text-white bg-primary border-primary">
-                        <h4 class="my-0 fw-normal">Enterprise</h4>
-                      </div>
-                      <div class="card-body">
-                        <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
-                        <ul class="list-unstyled mt-3 mb-4">
-                          <li>30 users included</li>
-                          <li>15 GB of storage</li>
-                          <li>Phone and email support</li>
-                          <li>Help center access</li>
-                        </ul>
-                        <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
-                      </div>
-                    </div>
+                  <!-- end Single Feature item -->
+
+                  <!-- FEATURE -->
+                  <div class="feature-items">
+                    <!-- ICON -->
+                    <i class="features-icon fa fa-desktop"></i>
+
+                    <!-- <h5>Ultra responsive</h5> -->
+                    <p>
+                      Up-to-date portfolio valuation, portfolio and investment performance, other risk metrics
+                    </p>
+                  </div>
+                  <!-- end Single Feature item -->
+
+                  <!-- FEATURE -->
+                  <div class="feature-items">
+
+                    <!-- ICON -->
+                    <i class="features-icon fa fa-mobile-phone"></i>
+
+                    <!-- FEATURE HEADING AND DESCRIPTION -->
+                    <!-- <h5>Cross-Browser</h5> -->
+                    <p>
+                      Track which investment has performed the best and worst and contributed most to your portfolio
+                    </p>
+                  </div>
+                  <!-- end Single Feature item -->
+                  <!-- FEATURE -->
+                  <div class="feature-items">
+
+                    <!-- ICON -->
+                    <i class="features-icon fa fa-mobile-phone"></i>
+
+                    <!-- FEATURE HEADING AND DESCRIPTION -->
+                    <!-- <h5>Cross-Browser</h5> -->
+                    <p>
+                      Track valuation and performance of both listed and unlisted investments
+
+                    </p>
+                  </div>
+                  <!-- end Single Feature item -->
+                </div>
+                <!-- /END FEATURES LEFT -->
+
+                <!-- PHONE IMAGE -->
+                <div class="col-sm-4">
+                  <div class="features-img wow bounceIn" data-wow-offset="120" data-wow-duration="1.5s"
+                    style="visibility: visible;-webkit-animation-duration: 1.5s; -moz-animation-duration: 1.5s; animation-duration: 1.5s;">
+                    <img src="img/excel.jpg" class="img-fluid my-3" alt="App Feature Image">
+                    <img src="img/excel.jpg" class="img-fluid my-3" alt="App Feature Image">
                   </div>
                 </div>
+
+                <!-- FEATURES RIGHT -->
+                <div class="col-sm-4 features-right wow fadeInRight" data-wow-offset="10" data-wow-duration="1.5s"
+                  style="visibility: visible;-webkit-animation-duration: 1.5s; -moz-animation-duration: 1.5s; animation-duration: 1.5s;">
+                  <!-- FEATURE -->
+                  <div class="feature-items">
+
+                    <!-- ICON -->
+                    <i class="features-icon fa fa-lightbulb-o"></i>
+
+                    <!-- <h5>Slim Scrollbar </h5> -->
+                    <p>
+                      Automated cash management
+                    </p>
+                  </div>
+                  <!-- end Single Feature item -->
+                  <!-- FEATURE -->
+                  <div class="feature-items">
+
+                    <!-- ICON -->
+                    <i class="features-icon fa fa-lightbulb-o"></i>
+
+                    <!-- <h5>Slim Scrollbar </h5> -->
+                    <p>
+                      In-depth reporting: Reports can be generated in CSV, DOCX and PDF formats which can be easily exported and passed on to chartered accountants
+                    </p>
+                  </div>
+                  <!-- end Single Feature item -->
+
+                  <!-- FEATURE -->
+                  <div class="feature-items">
+                    <!-- ICON -->
+                    <i class="features-icon fa fa-terminal"></i>
+
+                    <!-- <h5>BootStrap 3.3</h5> -->
+                    <p>
+                      Estimated capital gain/loss liability 
+                    </p>
+
+                  </div>
+                  <!-- end Single Feature item -->
+                </div><!-- /END FEATURES RIGHT -->
               </div>
             </div>
+
           </div>
         </div>
 
@@ -217,7 +361,7 @@
     <footer id="footer" class="footer">
       <ul class="social social-fixed">
         <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
-        <li><a href="#"><i class="lni lni-behance-original"></i></a></li>
+        <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
         <li><a href="#"><i class="lni lni-instagram-original"></i></a></li>
       </ul>
 
@@ -265,7 +409,9 @@
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+    integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.pagepiling.min.js"></script>
