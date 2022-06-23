@@ -40,7 +40,7 @@
 /* 1.1 General */
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,800&display=swap'); */
 @font-face {
 	font-family: 'MonumentExtended';
 	src: url('../fonts/monumentextended-regular-webfont.woff2') format('woff2'),
@@ -54,6 +54,7 @@ html {
 }
 
 body {
+	/* font-family: 'Poppins', sans-serif; */
 	font-family: 'DM Sans', sans-serif;
 	color: #282B2F;
 }
@@ -614,6 +615,14 @@ label.error {
 
 .header-bg {
 	position: absolute;
+    background: #131517;
+    top: 0;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+}
+/* .header-bg {
+	position: absolute;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -627,14 +636,15 @@ label.error {
     -ms-filter:blur(4px);
     -moz-filter:blur(4px);
     -webkit-filter:blur(4px);
-	/* background-color: #ffffff; */
-	/* background-color: #495057; */
-	/* box-shadow: 0 0 0px rgba(0,0,0,0.1); */
+	background-color: #ffffff;
+	background-color: #495057;
+	box-shadow: 0 0 0px rgba(0,0,0,0.1);
 	transition: .3s ease-in-out;
-}
+} */
 
 .header-shadow .header-bg {
 	height: 100px;
+	/* height: 75px; */
 	box-shadow: 0 0 30px rgba(0,0,0,0.1);
 }
 
@@ -644,12 +654,18 @@ label.error {
 	white-space: nowrap;
 	font-size: 1.5rem;
 	text-transform: uppercase;
+	margin-top: -12px;
+}
+
+.brand img{
+	height: 60px;
 }
 
 .brand a {
 	color: inherit;
 	text-decoration: none;
 }
+
 
 .header-content {
 	/* margin-left: 17.25%;
@@ -670,13 +686,17 @@ label.error {
 .header-contacts {
 	font-weight: bold;
 	/* text-transform: uppercase; */
+	display: flex;
+	justify-content: end;
+	align-items: baseline;
 	font-size: .875rem;
 	color: #fff;
 }
 
 .header-contact-item,
 .header-contact-divider {
-	display: inline-block;
+	/* display: inline-block; */
+
 	vertical-align: middle;
 }
 
@@ -818,7 +838,10 @@ label.error {
 	}
 }
 
-
+/* button border */
+.br-500{
+	border-radius: 500px;
+}
 
 .menu {
 	position: fixed;
@@ -1227,7 +1250,8 @@ label.error {
 }
 
 .circle-light {
-	background-color: #f5f4f0;
+	/* background-color: #f5f4f0; */
+	background-color: #212529;
 }
 
 .circle-green {
@@ -1273,7 +1297,7 @@ label.error {
 }
 
 .slide-photo {
-	position: absolute !important;
+	position: absolute !important;75px
 	left: 0;
 	right: 0;
 	top: 0;
@@ -2267,3 +2291,15 @@ a:hover .center-icon i {
 	color: #dc3545;
 	border-color: #f3a440;
   }
+
+
+/* additonal css for read more and read less  */
+
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+
+/* end of the css of the read more and read less  */
