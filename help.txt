@@ -65,3 +65,153 @@
                 </div>
               </div>
             </div>
+
+
+               <div class="section pp-scrollable slide-personal-services">
+          <div class="slide-container">
+            <div class="slide-bg">
+              <div class="slide-photo circle-light slide-services-circle2 transformLeft"></div>
+              <div class="slide-photo circle-brown slide-services-circle1 transformRight"></div>
+            </div>
+            <div class="container">
+              <div class="slide-num">2</div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="animate-element delay5 fadeInDown">
+                    <h2 class="slide-title slide-title-personal-services slide-title-lg">23</h2>
+                    <div class="d-md-none">
+                      <div class="slide-title-sub slide-title-sub-sm">YEARS EXPERIENCE</div>
+                      <div class="slide-descr slide-descr-personal-services font-italic">
+                        <!-- *Crafting beautiful brands and websites. <a href="#Contact" class="text-primary text-underline">Contact me</a> for more servies. -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <h3 class="slide-title-info animate-element delay5 fadeInDown">From beginning ideas to individual
+                    integrity, rich identity from the line <span class="text-primary">on the paper to final
+                      projects.</span></h3>
+                </div>
+              </div>
+
+              <div class="row animate-element delay5 fadeInUp">
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="slide-title-sub slide-title-sub-sm">YEARS<div class="d-none d-md-block"></div> EXPERIENCE
+                  </div>
+                  <div class="slide-descr slide-descr-personal-services font-italic">
+                    <!-- *Crafting beautiful brands and websites. <a href="#Contact" class="text-primary text-underline">Contact me</a> for more servies. -->
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="service-list row">
+                    <div class="col-md-6">
+                      <div class="service-item">
+                        <div class="service-item-title slide-title-sub">Web Design</div>
+                        <div class="service-item-descr slide-descr">Provide our customers with optimized user-friendly
+                          experience to increase the efficiency of digital products.</div>
+                        <div class="service-item-more"><a href="#" class="btn btn-sm btn-circle btn-success"><i
+                              class="lni lni-plus"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="service-item">
+                        <div class="service-item-title slide-title-sub">mobile app Design</div>
+                        <div class="service-item-descr slide-descr">Mobile application development is a highlight that
+                          businesses are interested in at the moment and in the future.</div>
+                        <div class="service-item-more"><a href="#" class="btn btn-sm btn-circle btn-success"><i
+                              class="lni lni-plus"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="service-item">
+                        <div class="service-item-title slide-title-sub">Branding</div>
+                        <div class="service-item-descr slide-descr">Understanding the business and their target
+                          customers, I’m the bridges to bring the brand closer to their clients.</div>
+                        <div class="service-item-more"><a href="#" class="btn btn-sm btn-circle btn-success"><i
+                              class="lni lni-plus"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="service-item">
+                        <div class="service-item-title slide-title-sub">3d Modeling</div>
+                        <div class="service-item-descr slide-descr">Help you translate your existing design or concept
+                          into CAD or to work with you to develop the ideal design.</div>
+                        <div class="service-item-more"><a href="#" class="btn btn-sm btn-circle btn-success"><i
+                              class="lni lni-plus"></i></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section pp-scrollable slide-personal-clients">
+          <div class="slide-container">
+            <div class="slide-bg"></div>
+            <div class="container">
+              <div class="slide-num">6</div>
+              <div class="row">
+                <div class="col-lg-5">
+                  <h3 class="slide-title-info mr-lg-5 pr-lg-3 animate-element delay5 fadeInDown">I've been fortunate to
+                    work with and for people from some <span class="text-primary">amazing organizations.</span></h3>
+                  <div class="client-list animate-element delay5 fadeInUp">
+                    <div class="clients-title title-mini">achievements</div>
+                    <div class="client-item media">
+                      <div class="client-icon"><i class="icon-partners"></i></div>
+                      <div class="media-body">
+                        <div class="client-item-title">6,142</div>
+                        <div class="client-item-descr slide-descr">Partners worldwide, as well as designers, developers
+                          and marketers.</div>
+                      </div>
+                    </div>
+                    <div class="client-item media">
+                      <div class="client-icon"><i class="icon-project"></i></div>
+                      <div class="media-body">
+                        <div class="client-item-title">3,498</div>
+                        <div class="client-item-descr slide-descr">Project completed and delivery on worldwide with more
+                          60 countries.</div>
+                      </div>
+                    </div>
+                    <div class="client-item media">
+                      <div class="client-icon"><i class="icon-worldwide"></i></div>
+                      <div class="media-body">
+                        <div class="client-item-title">11,024</div>
+                        <div class="client-item-descr slide-descr">Employees & Staffs worldwide at present.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-1 d-none d-xl-block"></div>
+                <div class="col-xl-6 col-lg-7">
+                  <div class="clients-photo animate-element delay5 fadeZooming">
+                    <div class="clients-photo-item clients-photo-item1">
+                      <div class="inside"><img src="img/pic-client-1.png" alt="" /></div>
+                    </div>
+                    <div class="clients-photo-item clients-photo-item2">
+                      <div class="inside"><img src="img/pic-client-2.png" alt="" /></div>
+                    </div>
+                    <div class="clients-photo-item clients-photo-item3">
+                      <div class="inside"><img src="img/pic-client-3.png" alt="" /></div>
+                    </div>
+                    <div class="clients-photo-item clients-photo-item4">
+                      <div class="inside"><img src="img/pic-client-4.png" alt="" /></div>
+                    </div>
+                    <div class="clients-photo-item clients-photo-item5">
+                      <div class="inside"><img src="img/pic-client-5.png" alt="" /></div>
+                    </div>
+                    <div class="clients-photo-item clients-photo-item6">
+                      <div class="inside"><img src="img/pic-client-6.png" alt="" /></div>
+                    </div>
+                    <div class="clients-photo-item clients-photo-item7">
+                      <div class="inside"><img src="img/pic-client-7.png" alt="" /></div>
+                    </div>
+                    <div class="clients-photo-item clients-photo-item8">
+                      <div class="inside"><img src="img/pic-client-8.png" alt="" /></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>

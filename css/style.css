@@ -61,13 +61,15 @@ body {
 
 a,
 a:hover {
-	color: #5ca595;
+	color: #f3a440;
+	/* color: #5ca595; */
 	/*transition: .3s ease;*/
 }
 
 a.text-primary:focus,
 a.text-primary:hover {
-	color: #5ca595 !important;
+	color: #f3a440 !important;
+	/* color: #5ca595 !important; */
 }
 
 ::selection {
@@ -2304,3 +2306,19 @@ a:hover .center-icon i {
 }
 
 /* end of the css of the read more and read less  */
+
+.btn-outline-light {
+    color: #f3a440;
+    border-color: #f3a440;
+}
+
+.btn-outline-light:hover:focus:active {
+    color: #f3a440;
+    border-color: #f3a440;
+}
+
+.btn-light {
+    color: white;
+    background-color: #f3a440;
+    border-color: #ffc107;
+}
