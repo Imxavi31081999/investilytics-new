@@ -1124,7 +1124,8 @@ label.error {
 
 @media (min-width: 768px) {
 	.slide-title {
-		font-size: 7.40740741vmin;
+		font-size: 5.40740741vmin;
+		/* font-size: 7.40740741vmin; */
 	}
 }
 
