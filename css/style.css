@@ -2322,3 +2322,9 @@ a:hover .center-icon i {
     background-color: #f3a440;
     border-color: #ffc107;
 }
+
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
+    color: #ffffff;
+    background-color: #f3a440;
+    border-color: #ffc107;
+}
