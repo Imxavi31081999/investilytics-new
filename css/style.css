@@ -2328,3 +2328,10 @@ a:hover .center-icon i {
     background-color: #f3a440;
     border-color: #ffc107;
 }
+
+
+.btn-light:hover {
+    color: #f8f9fa;
+    background-color: #f3a440;
+    border-color: #ffc107;
+}
