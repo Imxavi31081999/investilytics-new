@@ -39,23 +39,23 @@
 
 /* 1.1 General */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,800&display=swap'); */
-@font-face {
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,800&display=swap');
+/* @font-face {
 	font-family: 'MonumentExtended';
 	src: url('../fonts/monumentextended-regular-webfont.woff2') format('woff2'),
 		 url('../fonts/monumentextended-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
-}
+} */
 
 html {
 	font-size: 12px;
 }
 
 body {
-	/* font-family: 'Poppins', sans-serif; */
-	font-family: 'DM Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	/* font-family: 'DM Sans', sans-serif; */
 	color: #282B2F;
 }
 
@@ -163,7 +163,7 @@ input:focus {
 .btn-w {
 	padding: 1rem 2.5rem;
 	border-radius: 500px;
-	font-weight: bold;
+	/* font-weight: bold; */
 	font-size: 1.125rem;
 	text-transform: uppercase;
 }
@@ -175,8 +175,8 @@ input:focus {
 .btn-success:not(:disabled):not(.disabled).active,
 .btn-success:not(:disabled):not(.disabled):active,
 .show > .btn-success.dropdown-toggle {
-	background-color: #f3a440;
-    border-color: #f3a440;;
+	background-color: #f3a440 !important;
+    border-color: #f3a440 !important;
 }
 
 .btn-success {
@@ -1077,7 +1077,7 @@ label.error {
 	margin-bottom: 1rem;
 	position: relative;
 	z-index: 200;
-	font-family: 'MonumentExtended', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 1.125rem;
 	color: #999999;
 	transition: color .3s ease-in-out;
@@ -1121,7 +1121,8 @@ label.error {
 	line-height: 1;
 	/* color: #f3a440;; */
 	color: #f3a440;;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
+	text-transform: capitalize;
 }
 
 @media (min-width: 768px) {
@@ -1163,7 +1164,7 @@ label.error {
 
 .slide-title-info {
 	font-size: 1.875rem;
-	font-weight: bold;
+	/* font-weight: bold; */
 	line-height: 1.35;
 	letter-spacing: -.035em;
 	color: #fff;
@@ -1243,7 +1244,7 @@ label.error {
 }
 
 .circle-golden {
-	background-color: #f3a440;;
+	background-color: #f3a440;
 }
 
 .circle-brown {
@@ -1300,7 +1301,7 @@ label.error {
 }
 
 .slide-photo {
-	position: absolute !important;75px
+	position: absolute !important;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -2308,30 +2309,30 @@ a:hover .center-icon i {
 /* end of the css of the read more and read less  */
 
 .btn-outline-light {
-    color: #f3a440;
-    border-color: #f3a440;
+    color: #f3a440 !important;
+    border-color: #f3a440 !important;
 }
 
 .btn-outline-light:hover:focus:active {
-    color: #f3a440;
-    border-color: #f3a440;
+    color: #f3a440 !important;
+    border-color: #f3a440 !important;
 }
 
 .btn-light {
     color: white;
-    background-color: #f3a440;
-    border-color: #ffc107;
+    background-color: #f3a440 !important;
+    border-color: #ffc107 !important;
 }
 
 .btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
     color: #ffffff;
-    background-color: #f3a440;
-    border-color: #ffc107;
+    background-color: #f3a440 !important;
+    border-color: #ffc107 !important;
 }
 
 
 .btn-light:hover {
     color: #f8f9fa;
-    background-color: #f3a440;
-    border-color: #ffc107;
+    background-color: #f3a440 !important;
+    border-color: #ffc107 !important;
 }
