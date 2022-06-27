@@ -962,6 +962,7 @@ label.error {
 .menu-main > ul > li {
 	margin-bottom: 1.1875rem;
 	padding-left: 2px;
+	font-weight: normal;
 }
 
 .menu-main a,
