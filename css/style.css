@@ -1812,7 +1812,8 @@ label.error {
 
 .clients-photo {
 	height: 0;
-	padding-bottom: 103.50877193%;
+	/* padding-bottom: 103.50877193%; */
+	padding-bottom: 100%;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	position: relative;
