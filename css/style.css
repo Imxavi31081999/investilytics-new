@@ -1107,6 +1107,7 @@ label.error {
 	min-height: 100%;
 	display: flex;
 	align-items: center;
+	/* padding-top: 3.75rem; */
 	padding-top: 7.75rem;
 	padding-bottom: 3.25rem;
 	position: relative;
@@ -1586,7 +1587,7 @@ label.error {
 
 .award-item {
 	background: #f5f4f0;
-	border-radius: 1rem 1rem 3rem 1rem;
+	border-radius: 1rem;
 	padding: 2.1875rem 2.5rem;
 }
 
@@ -1604,7 +1605,8 @@ label.error {
 
 .award-item-logo {
 	margin-bottom: .75rem;
-	height: 9rem;
+	height: 4rem;
+	/* height: 9rem; */
 	display: flex;
 	overflow: hidden;
 	align-items: center;
@@ -1624,7 +1626,7 @@ label.error {
 
 @media (min-width: 992px) {
 	.award-list .award-item {
-		height: calc(100% - 4rem);
+		/* height: calc(100% - 4rem); */
 	}
 }
 
@@ -1691,7 +1693,7 @@ label.error {
 	font-size: 1.125rem;
 	text-transform: uppercase;
 	color: #ffffff;
-	font-weight: bold;
+	/* font-weight: bold; */
 }
 
 .experience-item-descr {
@@ -1742,7 +1744,8 @@ label.error {
 }
 
 .slide-personal-clients .slide-title-info {
-	margin-bottom: 12.40740741vmin;
+	margin-bottom: 4.40740741vmin;
+	/* margin-bottom: 12.40740741vmin; */
 	color: #fff;
 }
 
