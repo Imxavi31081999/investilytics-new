@@ -182,6 +182,7 @@ input:focus {
 .btn-success {
 	transition: box-shadow .3s ease-in-out;
 	transition-delay: 0;
+	text-transform: capitalize;
 }
 
 .btn-success:hover,
@@ -1145,7 +1146,8 @@ label.error {
 	/* color: #111111; */
 	/* color: #f5f4f0; */
 	color: #f3a440;;
-	text-transform: uppercase;
+	text-transform: capitalize;
+	/* text-transform: uppercase; */
 	letter-spacing: .025em;
 }
 
@@ -1798,7 +1800,7 @@ label.error {
 	margin-bottom: .625rem;
 	font-size: 2.125rem;
 	color: #fff;
-	font-family: 'MonumentExtended';
+	/* font-family: 'MonumentExtended'; */
 	line-height: .94117647;
 }
 
