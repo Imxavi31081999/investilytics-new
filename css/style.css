@@ -690,7 +690,8 @@ label.error {
 	font-weight: bold;
 	/* text-transform: uppercase; */
 	display: flex;
-	justify-content: end;
+	/* justify-content: end; */
+	float: right;
 	align-items: baseline;
 	font-size: .875rem;
 	color: #fff;
