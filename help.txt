@@ -328,3 +328,38 @@
             </div>
           </div>
         </div>
+
+           <!-- last seciton  -->
+        <div class="section pp-scrollable slide-personal-clients pp-section pp-easing active" >
+          <div class="slide-container">
+            <div class="slide-bg"></div>
+            <div class="container">
+              <!-- <div class="slide-num">6</div> -->
+              <div class="row">
+                <div class="col-md-12">
+                  <h3 class="slide-title text-primary animate-element delay5 fadeInDown">What’s in a name?</h3>
+                  <h3 class="slide-title-info animate-element delay5 fadeInDown" style="margin-bottom:0px;"> In our case, everything.
+                   </h3>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="slide-descr animate-element delay5 fadeInDown">InvestLytics is a combination of Investment
+                        and Analytics. The name stands on its own and defines our purpose. <br>
+                        <br>
+                        <!-- (2 cards, one with investment + other with Analytics written on it) = InvestLytics Logo
+                        (something like the image below) -->
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <img class="img-fluid animate-element delay5 fadeInDown" src="img/logo-illustration.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="slide-btn slide-btn-projects">
+                    <!-- <a href="#" class="btn-w btn-success">view project</a> -->
+                    <!-- <a href="#" class="slide-projects-more mt-2 mb-2">see all projects</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>

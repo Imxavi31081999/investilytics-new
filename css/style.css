@@ -1249,8 +1249,10 @@ label.error {
 }
 
 .circle-golden {
-	background-color: #282B2F;
+	/* background-color: #282B2F; */
 	/* background-color: #f3a440; */
+	background: rgb(243,164,64);
+background: linear-gradient(90deg, rgba(243,164,64,1) 40%, rgba(243,164,64,0) 100%);
 }
 
 .circle-brown {
@@ -2058,7 +2060,8 @@ a:hover .center-icon i {
 }
 
 .contact-personal-card-title {
-	height: 100%;
+	/* height: 100%; */
+	height:50%;
 }
 
 .contact-personal-card .title-mini {
