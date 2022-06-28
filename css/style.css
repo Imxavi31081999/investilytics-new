@@ -1592,7 +1592,8 @@ label.error {
 }
 
 .award-list .award-item {
-	margin-top: 4rem;
+	margin-top: 5px;
+	/* margin-top: 4rem; */
 }
 
 .award-item-date {
