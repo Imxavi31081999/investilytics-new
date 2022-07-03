@@ -629,7 +629,18 @@ label.error {
 	color: #282B2F;
 	transition: color .3s ease-in-out;
 }
-
+/* .header .container-fluid {
+    color: #282B2F;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    padding: 20px;
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: #202124;
+    transition: color .3s ease-in-out;
+} */
 @media (min-width: 768px) {
 	.header {
 		padding-top: 2.75rem;
@@ -724,7 +735,7 @@ label.error {
 	float: right;
 	align-items: baseline;
 	font-size: .875rem;
-	color: #fff;
+	color: #f3a440;
 }
 
 .header-contact-item,
@@ -787,7 +798,7 @@ label.error {
 	border-radius: 3px;
 	height: 3px;
 	/* background: #282B2F; */
-	background: #ffffff;
+	background: #f3a440;
 	transition: all .3s;
 	position: relative;
 }
@@ -1111,6 +1122,13 @@ label.error {
 	-webkit-overflow-scrolling: touch;
 }
 
+.pp-scrollable-2 {
+	background-color: #ffffff;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
 .slide-dark {
 	/* background-color: #f5f4f0; */
 	background-color: #131517;
@@ -1218,11 +1236,15 @@ label.error {
 }
 
 .slide-descr {
-	color: #999999;
+	color: #ffffff;
 	font-size: 1.125rem;
 	line-height: 1.66666667;
 }
-
+.slide-descr2 {
+	color: #000000;
+	font-size: 1.125rem;
+	line-height: 1.66666667;
+}
 .text-white .slide-descr {
 	color: #ffffff;
 }
@@ -1335,7 +1357,8 @@ label.error {
 /* 4.1 Slide Intro */
 
 .slide-personal-intro {
-	background-image: url("../img/bg-personal-intro.png");
+	background-image: url("../images/Group\ 21.jpg");
+	/* background-image: url("../img/bg-personal-intro.png"); */
 	background-size: cover;
 }
 
@@ -1417,6 +1440,16 @@ label.error {
 	bottom: auto;
 	right: auto;
 }
+
+.slide-services-circle22 {
+	width: 20rem;
+	height: 20rem;
+	left: -8.4375% !important;
+	top: 49.44444444% !important;
+	bottom: auto;
+	right: auto;
+}
+
 
 .slide-title-personal-services {
 	margin-bottom: 5.55555556vmin;
@@ -1582,7 +1615,8 @@ label.error {
 }
 
 .slide-descr-projects {
-	min-height: 8.33333333em;
+	min-height: 2.33333333em;
+	/* min-height: 8.33333333em; */
 	margin-bottom: 1.875rem;
 }
 
@@ -2211,9 +2245,9 @@ a:hover .center-icon i {
 	color: #ffffff;
 }
 
-.body-bg-dark .header:not(.header-shadow) .nav-toggle .stick,
+.body-bg-dark .header:not(.header-shadow) .nav-toggle,
 .body-bg-dark #pp-nav li a:not(.active) span {
-	background: #ffffff;
+	background: #fff;
 }
 
 .body-menu-opened .body-bg-dark .nav-toggle .stick {
@@ -2408,4 +2442,49 @@ a:hover .center-icon i {
 	color: #f8f9fa;
 	background-color: #f3a440 !important;
 	border-color: #ffc107 !important;
+}
+
+
+/* addional css for team card  */
+
+.zoom:hover {
+	transform: scale(1.2);
+  }
+
+  .text-black {
+	color: #131517;
+  }
+
+
+  /* animaiton keyframes  */
+
+      
+  .change-content {
+	color: #fff;
+	font-size: 1.5rem;
+	background-color: #f3a440;
+	padding: 10px 20px;
+}
+
+.change-content:after {
+	content: '';
+	animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext {
+	0% {
+		content: 'Powerful Investment Metrics';
+	}
+	25% {
+		content: 'Powerful Health Visualizations';
+	}
+	50% {
+		content: 'Capital Gain/Loss Estimation';
+	}
+	75% {
+		content: 'In-Depth Risk Report';
+	}
+	100% {
+		content: 'Centralized Investment Mangement DashBord';
+	}
 }
