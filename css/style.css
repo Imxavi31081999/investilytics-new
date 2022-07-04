@@ -2460,10 +2460,7 @@ a:hover .center-icon i {
 
       
   .change-content {
-	color: #fff;
-	font-size: 1.5rem;
-	background-color: #f3a440;
-	padding: 10px 20px;
+	font-size: 1.25rem;
 }
 
 .change-content:after {
