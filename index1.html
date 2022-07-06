@@ -33,7 +33,128 @@
   <meta name="msapplication-TileColor" content="#222222">
   <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
   <meta name="theme-color" content="#000">
+  <style>
+    a:hover,
+    a:focus {
+      text-decoration: none;
+      outline: none;
+    }
 
+    #accordion .panel {
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    #accordion .panel:before {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 100%;
+      border: 1px dashed #6e8898;
+      position: absolute;
+      top: 25px;
+      left: 18px;
+    }
+
+    #accordion .panel:last-child:before {
+      display: none;
+    }
+
+    #accordion .panel-heading {
+      padding: 0;
+      border: none;
+      border-radius: 0;
+      position: relative;
+    }
+
+    #accordion .panel-title a {
+      display: block;
+      padding: 10px 30px 10px 60px;
+      margin: 0;
+      background: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #131517;
+      border-radius: 0;
+      position: relative;
+    }
+
+    #accordion .panel-title a:before,
+    #accordion .panel-title a.collapsed:before {
+      content: "\f107";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      width: 40px;
+      height: 100%;
+      line-height: 40px;
+      background: #f3a440;
+      border: 1px solid #f3a440;
+      border-radius: 3px;
+      font-size: 17px;
+      color: #fff;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.3s ease 0s;
+    }
+
+    #accordion .panel-title a.collapsed:before {
+      content: "\f105";
+      background: #fff;
+      border: 1px solid #6e8898;
+      color: #000;
+    }
+
+    #accordion .panel-body {
+      padding: 10px 30px 10px 30px;
+      margin-left: 40px;
+      background: #fff;
+      border-top: none;
+      font-size: 15px;
+      color: #6f6f6f;
+      line-height: 28px;
+      letter-spacing: 1px;
+    }
+  </style>
+
+  <style>
+    .nav-pills-custom .nav-link {
+      color: #131517;
+      background: #fff;
+      position: relative;
+    }
+
+    .nav-pills-custom .nav-link.active {
+      color: #f3a440;
+      background: #fff;
+    }
+
+
+    /* Add indicator arrow for the active tab */
+    @media (min-width: 992px) {
+      .nav-pills-custom .nav-link::before {
+        content: '';
+        display: block;
+        border-top: 8px solid transparent;
+        border-left: 10px solid #fff;
+        border-bottom: 8px solid transparent;
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%);
+        opacity: 0;
+      }
+    }
+
+    .nav-pills-custom .nav-link.active::before {
+      opacity: 1;
+    }
+  </style>
 </head>
 
 <body class="body-copyright-light">
@@ -156,9 +277,12 @@
                   </h1>
                   <div class="animate-element delay5 fadeInUp">
                     <!-- <h3 class="slide-title-sub">interaction &amp; visual product designer</h3> -->
-                    <div class="slide-descr slide-descr-intro more"> Every investment management tool in a single solution. Built for retail investors and independent advisors with compliance in mind. 
-                      Comprehensive portfolio and wealth management services, turnkey solutions for end-to-end client management in line with SEBI regulations and more, InvestLytics handles all the investment management tasks for you.
-                      
+                    <div class="slide-descr slide-descr-intro more"> Every investment management tool in a single
+                      solution. Built for retail investors and independent advisors with compliance in mind.
+                      Comprehensive portfolio and wealth management services, turnkey solutions for end-to-end client
+                      management in line with SEBI regulations and more, InvestLytics handles all the investment
+                      management tasks for you.
+
                     </div>
                     <div class="slide-btn">
                       <button class="btn-w btn-success" data-toggle="modal" data-target="#send-request">get
@@ -195,9 +319,10 @@
                   <img src="images/dec.png" class="img-fluid mt-5" alt="">
                 </div>
                 <div class="col-md-6 offset-md-1">
-                  <p class="slide-descr2 slide-descr-projects mt-5 ">InvestLytics is an all-in-one investment management platform built to solve all your investment and client management woes.
+                  <p class="slide-descr2 slide-descr-projects mt-5 ">InvestLytics is an all-in-one investment management
+                    platform built to solve all your investment and client management woes.
                   </p>
-                  <p class="slide-descr2 slide-descr-projects mb-0 ">   Everything your investments and clients need
+                  <p class="slide-descr2 slide-descr-projects mb-0 "> Everything your investments and clients need
                   </p>
                   <!-- <p class="slide-descr2">   <ul>
                     <li>Powerful Investment Metrics</li>
@@ -210,7 +335,8 @@
                   </ul>
                   </p> -->
                   <span class="change-content"></span>
-                  <p class="slide-descr2 slide-descr-projects mb-3 mt-3 mb-md-0 "> Delivered in a single seamless solution. 
+                  <p class="slide-descr2 slide-descr-projects mb-3 mt-3 mb-md-0 "> Delivered in a single seamless
+                    solution.
                   </p>
                   <div class="mt-3">
                     <a href="about-us copy.html"> <button class="btn-w btn-success">View More</button></a>
@@ -218,6 +344,213 @@
                 </div>
 
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="section pp-scrollable-2 slide-dark-footer slide-personal-BLOG">
+          <div class="slide-container">
+            <!-- <div class="slide-bg">
+              <div class="slide-photo circle-green slide-BLOG-circle1 transformLeft"></div>
+              <div class="slide-photo circle-brown slide-BLOG-circle2 transformRight"></div>
+            </div> -->
+            <div class="container">
+              <div class="slide-num">About Us</div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="animate-element  fadeInDown">
+                    <h2 class="slide-title slide-title-personal-services">One Of A Kind
+                    </h2>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <h3 class="slide-title-info text-black animate-element delay5 fadeInDown">Whether you are managing
+                    your
+                    investment or a client’s,<span class="text-primary"> InvestLytics has everything you need to do it
+                      better.
+                    </span></h3>
+                </div>
+              </div>
+              <div class="row align-items-center animate-element delay5 fadeInDown my-5">
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                          <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                              aria-expanded="true" aria-controls="collapseOne">
+                              COMPREHENSIVE:
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                          aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <p>InvestLytics’s intelligent algorithms automatically handle all the complex tasks for you.
+                              InvestLytics offers all major investment management tools and market analytics in a single
+                              platform.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                              href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              COMPLIANCE FIRST:
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                          aria-labelledby="headingTwo">
+                          <div class="panel-body">
+                            <p>InvestLytics is at the forefront of regulatory requirements, keeping up to date with SEBI
+                              guidelines. From mandatory reporting to risk profiling and tracking, we offer greater
+                              portfolio transparency to both advisors and investors. </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                              href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              ADVANCED ANALYTICS AND MANAGEMENT:
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                          aria-labelledby="headingThree">
+                          <div class="panel-body">
+                            <p>Market analytics at even macroeconomic levels. Compare multiple stocks on NSE/BSE with
+                              fundamental analysis, corporate actions, broker view, etc. View all your documents library
+                              with complete details on mutual funds such as objectives, strategy, managers, entry and
+                              exit load, risk metrics and performance from within you investment dashboard.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingfour">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                              href="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+
+                              FREEDOM AND SECURITY:
+
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapsefour" class="panel-collapse collapse" role="tabpanel"
+                          aria-labelledby="headingfour">
+                          <div class="panel-body">
+                            <p>InvestLytics gives you the freedom to choose your own advisors, trading and banking
+                              partners plus the platform is audited and certified by independent third party security
+                              firms and is fully GDPR compliant. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus perspiciatis culpa, rem, cumque
+                    quis quos sunt expedita officia illo sit ipsam fugit, rerum iure? Hic accusantium sint explicabo
+                    nihil ut.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="section pp-scrollable-2 slide-dark-footer slide-personal-BLOG">
+          <div class="slide-container">
+            <!-- <div class="slide-bg">
+              <div class="slide-photo circle-green slide-BLOG-circle1 transformLeft"></div>
+              <div class="slide-photo circle-brown slide-BLOG-circle2 transformRight"></div>
+            </div> -->
+            <div class="container">
+              <div class="slide-num">About Us</div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="animate-element  fadeInDown">
+                    <h2 class="slide-title slide-title-personal-services">One Of A Kind
+                    </h2>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <h3 class="slide-title-info text-black animate-element delay5 fadeInDown">Whether you are managing
+                    your
+                    investment or a client’s,<span class="text-primary"> InvestLytics has everything you need to do it
+                      better.
+                    </span></h3>
+                </div>
+              </div>
+              <div class="row align-items-center animate-element delay5 fadeInDown my-5">
+                <section class="py-2 header">
+
+                  <div class="row">
+                    <div class="col-md-3">
+                      <!-- Tabs nav -->
+                      <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <a class="nav-link mb-3 p-3 shadow active" id="v-pills-home-tab" data-toggle="pill"
+                          href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                          <span class="">COMPREHENSIVE</span></a>
+                        <a class="nav-link mb-3 p-3 shadow" id="v-pills-profile-tab" data-toggle="pill"
+                          href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+
+                          <span class=""">COMPLIANCE FIRST</span></a>
+              
+                                  <a class=" nav-link mb-3 p-3 shadow" id="v-pills-messages-tab" data-toggle="pill"
+                            href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                            <span class=""">ADVANCED ANALYTICS AND MANAGEMENT</span></a>
+              
+                                  <a class=" nav-link mb-3 p-3 shadow" id="v-pills-settings-tab" data-toggle="pill"
+                              href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
+                              aria-selected="false">
+                              <span class=""">FREEDOM AND SECURITY</span></a>
+                                  </div>
+                          </div>
+              
+              
+                          <div class=" col-md-9">
+                                <!-- Tabs content -->
+                                <div class="tab-content" id="v-pills-tabContent">
+                                  <div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-home"
+                                    role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                    <h4 class="">COMPREHENSIVE</h4>
+                                    <p class="">InvestLytics’s intelligent algorithms automatically handle all the complex tasks for you. InvestLytics offers all major investment management tools and market analytics in a single platform.
+                                    </p>
+                                  </div>
+
+                                  <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-profile"
+                                    role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                    <h4 class="">COMPLIANCE FIRST</h4>
+                                    <p class="">InvestLytics is at the forefront of regulatory requirements, keeping up to date with SEBI guidelines. From mandatory reporting to risk profiling and tracking, we offer greater portfolio transparency to both advisors and investors. </p>
+                                  </div>
+
+                                  <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-messages"
+                                    role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                    <h4 class="">ADVANCED ANALYTICS AND MANAGEMENT:</h4>
+                                    <p class="">Market analytics at even macroeconomic levels. Compare multiple stocks on NSE/BSE with fundamental analysis, corporate actions, broker view, etc. View all your documents library with complete details on mutual funds such as objectives, strategy, managers, entry and exit load, risk metrics and performance from within you investment dashboard.</p>
+                                  </div>
+
+                                  <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-settings"
+                                    role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                    <h4 class="">FREEDOM AND SECURITY</h4>
+                                    <p class="">nvestLytics gives you the freedom to choose your own advisors, trading and banking partners plus the platform is audited and certified by independent third party security firms and is fully GDPR compliant. 
+                                    </p>
+                                  </div>
+                                </div>
+                      </div>
+                    </div>
+
+                </section>
+
+
+              </div>
+
             </div>
           </div>
         </div>
@@ -293,11 +626,11 @@
           </div>
         </div>
 
-             <div class="section pp-scrollable slide-dark slide-dark-bg slide-personal-projects">
+        <div class="section pp-scrollable slide-dark slide-dark-bg slide-personal-projects">
           <div class="carousel-project-personal a-carousel-projects owl-carousel owl-theme">
             <div class="carousel-project-item text-white" style="background-image: url(img/banner/img-2.png);">
               <div class="slide-container">
-                <div class="container">     
+                <div class="container">
                   <div class="animate-element delay5 fadeInDown">
                     <div class="row">
                       <div class="col-md-12">
@@ -307,9 +640,12 @@
                           <div class="col-lg-8">
                             <div class="slide-descr slide-descr-projects">
                               <p>InvestLytics empowers even the novice investor to manage their investments better.</p>
-                              <p>Powerful investment metrics, portfolio visualizations, capital gain/loss estimations, unified reports creation and automatic documents library management in a single centralized dashboard. Supports all third-party demat account providers, share trading partners, advisors and banks.</p>
+                              <p>Powerful investment metrics, portfolio visualizations, capital gain/loss estimations,
+                                unified reports creation and automatic documents library management in a single
+                                centralized dashboard. Supports all third-party demat account providers, share trading
+                                partners, advisors and banks.</p>
                             </div>
-                        
+
                           </div>
                         </div>
                         <div class="slide-btn slide-btn-projects mt-3">
@@ -329,14 +665,18 @@
                   <div class="animate-element delay5 fadeInDown">
                     <div class="row">
                       <div class="col-md-12">
-                        <h3 class="slide-title text-white">Advisor  Portal</h3>
+                        <h3 class="slide-title text-white">Advisor Portal</h3>
                         <div class="row">
                           <div class="col-lg-8">
                             <div class="slide-descr slide-descr-projects">
-                              <p>We automate the tedious management tasks so advisors can scale quickly and service their clients better.
+                              <p>We automate the tedious management tasks so advisors can scale quickly and service
+                                their clients better.
                               </p>
-                                <p>End-to-end investment and client management in a single solution. In-depth advanced portfolio analysis, unified performance and risk reports creation, turnkey solution for client administration with strict adherence to SEBI guidelines. No restrictions on account providers, brokers and other financial institutions.
-                                </p>
+                              <p>End-to-end investment and client management in a single solution. In-depth advanced
+                                portfolio analysis, unified performance and risk reports creation, turnkey solution for
+                                client administration with strict adherence to SEBI guidelines. No restrictions on
+                                account providers, brokers and other financial institutions.
+                              </p>
                             </div>
                           </div>
                         </div>
@@ -382,51 +722,51 @@
                       <div class="col-lg-10 mx-auto">
                         <div class="row">
                           <div class="col-md-4 zoom d-flex ">
-                        <a href="teams.html">
-                          <div class="card mb-3">
-                            <img class="card-img-top" src="images/brand/Shefali-Sihag-sm.jpg" alt="Shefali-Sihag">
-                            <div class="card-body py-3">
-                              <h5 class="mb-0 text-black">Shefali Sihag</h5>
-                              <span>CEO, Founder of InvestLytics</span>
-                            </div>
-                            <!-- <div class="card-footer pt-0 border-top-0">
+                            <a href="teams.html">
+                              <div class="card mb-3">
+                                <img class="card-img-top" src="images/brand/Shefali-Sihag-sm.jpg" alt="Shefali-Sihag">
+                                <div class="card-body py-3">
+                                  <h5 class="mb-0 text-black">Shefali Sihag</h5>
+                                  <span>CEO, Founder of InvestLytics</span>
+                                </div>
+                                <!-- <div class="card-footer pt-0 border-top-0">
                               <a href="teams.html">Read More</a>
                             </div> -->
-                          </div>
-                        </a>
+                              </div>
+                            </a>
                           </div>
                           <div class="col-md-4 zoom d-flex">
-                          <a href="teams.html">
-                            <div class="card mb-3">
-                              <img class="card-img-top" src="images/brand/Siddharth-Sihag-sm.jpg" alt="Noel Flantier">
-                              <div class="card-body py-3">
-                                <h5 class="mb-0 text-black">Siddharth Sihag</h5>
-                                <span>Lawyer, InvestLytics</span>
-                              </div>
-                              <!-- <div class="card-footer pt-0 border-top-0">
+                            <a href="teams.html">
+                              <div class="card mb-3">
+                                <img class="card-img-top" src="images/brand/Siddharth-Sihag-sm.jpg" alt="Noel Flantier">
+                                <div class="card-body py-3">
+                                  <h5 class="mb-0 text-black">Siddharth Sihag</h5>
+                                  <span>Lawyer, InvestLytics</span>
+                                </div>
+                                <!-- <div class="card-footer pt-0 border-top-0">
                                 <a href="teams.html">Read More</a>
                               </div> -->
-                            </div>
-                          </a>
+                              </div>
+                            </a>
                           </div>
                           <div class="col-md-4 zoom d-flex">
-                          <a href="teams.html">
-                            <div class="card mb-3">
-                              <img class="card-img-top" src="images/brand/Vishal-Raheja-sm.jpg" alt="Jamie Doe">
-                              <div class="card-body py-3">
-                                <h5 class="mb-0 text-black">Vishal Raheja</h5>
-                                <span>Advisor, InvestLytics</span>
-                              </div>
-                              <!-- <div class="card-footer pt-0 border-top-0">
+                            <a href="teams.html">
+                              <div class="card mb-3">
+                                <img class="card-img-top" src="images/brand/Vishal-Raheja-sm.jpg" alt="Jamie Doe">
+                                <div class="card-body py-3">
+                                  <h5 class="mb-0 text-black">Vishal Raheja</h5>
+                                  <span>Advisor, InvestLytics</span>
+                                </div>
+                                <!-- <div class="card-footer pt-0 border-top-0">
                                 <a href="teams.html">Read More</a>
                               </div> -->
-                            </div>
-                          </a>
+                              </div>
+                            </a>
                           </div>
                         </div>
                       </div>
 
-                      
+
                     </div>
                   </div>
                 </section>
@@ -448,8 +788,7 @@
                 <div class="col-lg-7 mb-5 mb-lg-0">
                   <div class="contact-personal-card">
                     <div class="contact-personal-card-title animate-element delay7 fadeInDown">
-                      <h2 class="slide-title"> Hello, <span
-                        class="text-primary">InvestLytics !</span></h2>
+                      <h2 class="slide-title"> Hello, <span class="text-primary">InvestLytics !</span></h2>
                     </div>
                     <div class="contact-personal-card-detail animate-element delay7 fadeInUp">
                       <div class="row">
@@ -459,8 +798,9 @@
                           <div class="slide-title-sub"><a href="tel:+7068980751" class="phone-link">(+91)892 065
                               6746</a>
                           </div>
-                          <div class="text-md t"><a href="mailto:Contact@investlytics.in"
-                              class="text-primary"><p>contact@investlytics.in</p></a></div>
+                          <div class="text-md t"><a href="mailto:Contact@investlytics.in" class="text-primary">
+                              <p>contact@investlytics.in</p>
+                            </a></div>
                         </div>
                       </div>
                     </div>

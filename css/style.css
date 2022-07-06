@@ -30,7 +30,10 @@
 
   5.  Footer
 
-
+#131517
+#282B2F
+#f3a440
+#ffc107
 
 /*-------------------------------------------------------------------------------
   1. Global
@@ -629,6 +632,7 @@ label.error {
 	color: #282B2F;
 	transition: color .3s ease-in-out;
 }
+
 /* .header .container-fluid {
     color: #282B2F;
     background: rgba( 255, 255, 255, 0.05 );
@@ -643,8 +647,9 @@ label.error {
 } */
 @media (min-width: 768px) {
 	.header {
-		padding-top: 2.75rem;
-		padding-bottom: 2.75rem;
+		padding-top: 1.75rem;
+		/* padding-top: 2.75rem; */
+		padding-bottom: 1.75rem;
 	}
 }
 
@@ -665,8 +670,8 @@ label.error {
 	z-index: -1;
 }
 
-/* .header-bg {
-	position: absolute;
+.header-bg {
+	/* position: absolute;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -674,7 +679,6 @@ label.error {
 	z-index: -1;
 	background:black;
     background:rgba(0,0,0,0.8);
-
     filter:blur(4px);
     -o-filter:blur(4px);
     -ms-filter:blur(4px);
@@ -683,8 +687,20 @@ label.error {
 	background-color: #ffffff;
 	background-color: #495057;
 	box-shadow: 0 0 0px rgba(0,0,0,0.1);
-	transition: .3s ease-in-out;
-} */
+	transition: .3s ease-in-out; */
+	color: #282B2F;
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+	/*     padding: 20px; */
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	height: 90px;
+	/*     border-radius: 10px; */
+	/*     border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+	/*     background: #202124; */
+	transition: color .3s ease-in-out;
+
+}
 
 .header-shadow .header-bg {
 	height: 100px;
@@ -1240,11 +1256,13 @@ label.error {
 	font-size: 1.125rem;
 	line-height: 1.66666667;
 }
+
 .slide-descr2 {
 	color: #000000;
 	font-size: 1.125rem;
 	line-height: 1.66666667;
 }
+
 .text-white .slide-descr {
 	color: #ffffff;
 }
@@ -2449,17 +2467,17 @@ a:hover .center-icon i {
 
 .zoom:hover {
 	transform: scale(1.2);
-  }
+}
 
-  .text-black {
+.text-black {
 	color: #131517;
-  }
+}
 
 
-  /* animaiton keyframes  */
+/* animaiton keyframes  */
 
-      
-  .change-content {
+
+.change-content {
 	font-size: 1.25rem;
 }
 
@@ -2472,15 +2490,19 @@ a:hover .center-icon i {
 	0% {
 		content: 'Powerful Investment Metrics';
 	}
+
 	25% {
 		content: 'Powerful Health Visualizations';
 	}
+
 	50% {
 		content: 'Capital Gain/Loss Estimation';
 	}
+
 	75% {
 		content: 'In-Depth Risk Report';
 	}
+
 	100% {
 		content: 'Centralized Investment Mangement DashBord';
 	}
