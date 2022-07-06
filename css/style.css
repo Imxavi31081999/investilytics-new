@@ -647,9 +647,9 @@ label.error {
 } */
 @media (min-width: 768px) {
 	.header {
-		padding-top: 1.75rem;
-		/* padding-top: 2.75rem; */
-		padding-bottom: 1.75rem;
+		/* padding-top: 1.75rem; */
+		padding-top: 2.75rem;
+		padding-bottom: 2.75rem;
 	}
 }
 
@@ -670,8 +670,8 @@ label.error {
 	z-index: -1;
 }
 
-.header-bg {
-	/* position: absolute;
+/* .header-bg {
+	position: absolute;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -687,20 +687,20 @@ label.error {
 	background-color: #ffffff;
 	background-color: #495057;
 	box-shadow: 0 0 0px rgba(0,0,0,0.1);
-	transition: .3s ease-in-out; */
+	transition: .3s ease-in-out;
 	color: #282B2F;
 	background: rgba(255, 255, 255, 0.05);
 	box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
-	/*     padding: 20px; */
+	    padding: 20px;
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(4px);
 	height: 90px;
-	/*     border-radius: 10px; */
-	/*     border: 1px solid rgba( 255, 255, 255, 0.18 ); */
-	/*     background: #202124; */
+	    border-radius: 10px;
+	    border: 1px solid rgba( 255, 255, 255, 0.18 );
+	    background: #202124;
 	transition: color .3s ease-in-out;
 
-}
+} */
 
 .header-shadow .header-bg {
 	height: 100px;
@@ -1375,7 +1375,10 @@ label.error {
 /* 4.1 Slide Intro */
 
 .slide-personal-intro {
-	background-image: url("../images/Group\ 21.jpg");
+	/* background-image: url("../images/Group\ 21.jpg"); */
+	background-image: url("../images/Group\ 28.jpg");
+	/* background-image: url("../images/Group\ 24\ 1.jpg"); */
+	/* background-image: url("../images/pexels-anna-nekrashevich-6802042\ \(1\)\ \(1\).jpg"); */
 	/* background-image: url("../img/bg-personal-intro.png"); */
 	background-size: cover;
 }
