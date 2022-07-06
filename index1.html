@@ -155,6 +155,202 @@
       opacity: 1;
     }
   </style>
+
+  <style>
+    
+/* 2.21 Cases */
+.cases {
+  position: relative;
+  overflow: hidden;
+}
+
+.cases__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.cases__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -webkit-animation: runningLine 10s linear infinite;
+          animation: runningLine 10s linear infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@media (max-width: 1000px) {
+  .cases__row {
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+  }
+}
+
+.cases__row:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.cases__row-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+@-webkit-keyframes runningLine {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-33.3%);
+            transform: translateX(-33.3%);
+  }
+}
+
+@keyframes runningLine {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-33.3%);
+            transform: translateX(-33.3%);
+  }
+}
+
+@-webkit-keyframes runningLineWrap {
+  0% {
+    -webkit-transform: translateX(-33.3%);
+            transform: translateX(-33.3%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes runningLineWrap {
+  0% {
+    -webkit-transform: translateX(-33.3%);
+            transform: translateX(-33.3%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.cases__card {
+  width: 427px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  position: relative;
+  height: 74.53704vh;
+  border-left: 1px solid #787A7C;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+@media (max-width: 1000px) {
+  .cases__card {
+    width: 350px;
+    height: 620px;
+  }
+}
+
+@media (max-width: 450px) {
+  .cases__card {
+    width: 300px;
+    height: 580px;
+  }
+}
+
+.cases__card:hover {
+  cursor: url("../img/cases/cursor.jpg") 62 62, pointer;
+}
+
+.cases__card:hover img {
+  opacity: 1;
+}
+
+@media (max-width: 1000px) {
+  .cases__card:hover img {
+    opacity: 1;
+  }
+}
+
+.cases__text {
+  position: absolute;
+  bottom: 40px;
+  left: 70px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  width: 74.53704vh;
+  z-index: 5;
+}
+
+.cases__card-number {
+  font-size: 22px;
+  line-height: 140%;
+  color: #F3F3F3;
+}
+
+.cases__card-name {
+  font-size: 70px;
+  line-height: 110%;
+  color: #F3F3F3;
+}
+
+@media (max-height: 850px) {
+  .cases__card-name {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cases__card-name {
+    font-size: 48px;
+  }
+}
+
+.cases__card-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+@media (max-width: 1000px) {
+  .cases__card-img {
+    opacity: 1;
+  }
+}
+  </style>
 </head>
 
 <body class="body-copyright-light">
@@ -775,7 +971,56 @@
           </div>
         </div>
 
-
+        <div class="section pp-scrollable slide-personal-Team">
+          <div class="slide-container">
+            <div class="slide-bg">
+              <!-- <div class="slide-photo circle-golden slide-Team-circle3 animate-element delay5 fadeInUp"></div> -->
+            </div>
+            <div class="container">
+              <canvas class="noise"></canvas>
+              <div class="section-main cases js-section" id="cases">
+                <div class="cases__play-animation-right"></div>
+                <div class="cases__play-animation-left"></div>
+                <div class="cases__container">
+                  <div class="cases__row-wrapper">
+                    <div class="cases__row js-cases-row">
+                      <!-- Case card--><a class="cases__card js-cases-card" href="case-page.html">
+                        <div class="cases__text">
+                          <div class="cases__card-number">01</div>
+                          <div class="cases__card-name">Section</div>
+                        </div><img class="cases__card-img" src="img/cases/img1.jpg" alt="img"></a>
+                      <!-- Case card--><a class="cases__card js-cases-card" href="case-page.html">
+                        <div class="cases__text">
+                          <div class="cases__card-number">02</div>
+                          <div class="cases__card-name">Section</div>
+                        </div><img class="cases__card-img" src="img/cases/img2.jpg" alt="img"></a>
+                      <!-- Case card--><a class="cases__card js-cases-card" href="case-page.html">
+                        <div class="cases__text">
+                          <div class="cases__card-number">03</div>
+                          <div class="cases__card-name">Section</div>
+                        </div><img class="cases__card-img" src="img/cases/img3.jpg" alt="img"></a>
+                      <!-- Case card--><a class="cases__card js-cases-card" href="case-page.html">
+                        <div class="cases__text">
+                          <div class="cases__card-number">04</div>
+                          <div class="cases__card-name">Section</div>
+                        </div><img class="cases__card-img" src="img/cases/img4.jpg" alt="img"></a>
+                      <!-- Case card--><a class="cases__card js-cases-card" href="case-page.html">
+                        <div class="cases__text">
+                          <div class="cases__card-number">05</div>
+                          <div class="cases__card-name">Section</div>
+                        </div><img class="cases__card-img" src="img/cases/img5.jpg" alt="img"></a>
+                      <!-- Case card--><a class="cases__card js-cases-card" href="case-page.html">
+                        <div class="cases__text">
+                          <div class="cases__card-number">06</div>
+                          <div class="cases__card-name">Section</div>
+                        </div><img class="cases__card-img" src="img/cases/img6.jpg" alt="img"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="section pp-scrollable slide-personal-contacts">
           <div class="slide-container">
             <div class="slide-bg">
