@@ -157,199 +157,202 @@
   </style>
 
   <style>
-    
-/* 2.21 Cases */
-.cases {
-  position: relative;
-  overflow: hidden;
-}
+    /* 2.21 Cases */
+    .cases {
+      position: relative;
+      overflow: hidden;
+    }
 
-.cases__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-}
+    .cases__container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      overflow: hidden;
+    }
 
-.cases__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
+    .cases__row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-flex: 0;
+      -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  -webkit-animation: runningLine 10s linear infinite;
-          animation: runningLine 10s linear infinite;
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-}
+      flex: 0 0 auto;
+      -webkit-animation: runningLine 10s linear infinite;
+      animation: runningLine 10s linear infinite;
+      -webkit-animation-play-state: running;
+      animation-play-state: running;
+    }
 
-@media (max-width: 1000px) {
-  .cases__row {
-    -webkit-animation-play-state: running;
-            animation-play-state: running;
-  }
-}
+    @media (max-width: 1000px) {
+      .cases__row {
+        -webkit-animation-play-state: running;
+        animation-play-state: running;
+      }
+    }
 
-.cases__row:hover {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-}
+    .cases__row:hover {
+      -webkit-animation-play-state: paused;
+      animation-play-state: paused;
+    }
 
-.cases__row-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
+    .cases__row-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-flex: 0;
+      -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-}
+      flex: 0 0 auto;
+    }
 
-@-webkit-keyframes runningLine {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-33.3%);
-            transform: translateX(-33.3%);
-  }
-}
+    @-webkit-keyframes runningLine {
+      0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
 
-@keyframes runningLine {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-33.3%);
-            transform: translateX(-33.3%);
-  }
-}
+      100% {
+        -webkit-transform: translateX(-33.3%);
+        transform: translateX(-33.3%);
+      }
+    }
 
-@-webkit-keyframes runningLineWrap {
-  0% {
-    -webkit-transform: translateX(-33.3%);
-            transform: translateX(-33.3%);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
+    @keyframes runningLine {
+      0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
 
-@keyframes runningLineWrap {
-  0% {
-    -webkit-transform: translateX(-33.3%);
-            transform: translateX(-33.3%);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
+      100% {
+        -webkit-transform: translateX(-33.3%);
+        transform: translateX(-33.3%);
+      }
+    }
 
-.cases__card {
-  width: 427px;
-  -webkit-box-flex: 0;
+    @-webkit-keyframes runningLineWrap {
+      0% {
+        -webkit-transform: translateX(-33.3%);
+        transform: translateX(-33.3%);
+      }
+
+      100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes runningLineWrap {
+      0% {
+        -webkit-transform: translateX(-33.3%);
+        transform: translateX(-33.3%);
+      }
+
+      100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+    }
+
+    .cases__card {
+      width: 427px;
+      -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  position: relative;
-  height: 74.53704vh;
-  border-left: 1px solid #787A7C;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
-}
+      flex: 0 0 auto;
+      position: relative;
+      height: 74.53704vh;
+      border-left: 1px solid #787A7C;
+      -webkit-transition: .3s ease;
+      transition: .3s ease;
+    }
 
-@media (max-width: 1000px) {
-  .cases__card {
-    width: 350px;
-    height: 620px;
-  }
-}
+    @media (max-width: 1000px) {
+      .cases__card {
+        width: 350px;
+        height: 620px;
+      }
+    }
 
-@media (max-width: 450px) {
-  .cases__card {
-    width: 300px;
-    height: 580px;
-  }
-}
+    @media (max-width: 450px) {
+      .cases__card {
+        width: 300px;
+        height: 580px;
+      }
+    }
 
-.cases__card:hover {
-  /* cursor: url("../img/cases/cursor.jpg") 62 62, pointer; */
-}
+    .cases__card:hover {
+      /* cursor: url("../img/cases/cursor.jpg") 62 62, pointer; */
+    }
 
-.cases__card:hover img {
-  opacity: 1;
-}
+    .cases__card:hover img {
+      opacity: 1;
+    }
 
-@media (max-width: 1000px) {
-  .cases__card:hover img {
-    opacity: 1;
-  }
-}
+    @media (max-width: 1000px) {
+      .cases__card:hover img {
+        opacity: 1;
+      }
+    }
 
-.cases__text {
-  position: absolute;
-  bottom: 40px;
-  left: 70px;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  width: 74.53704vh;
-  z-index: 5;
-}
+    .cases__text {
+      position: absolute;
+      bottom: 40px;
+      left: 70px;
+      -webkit-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      -webkit-transform-origin: left;
+      transform-origin: left;
+      width: 74.53704vh;
+      z-index: 5;
+    }
 
-.cases__card-number {
-  font-size: 22px;
-  line-height: 140%;
-  color: #F3F3F3;
-}
+    .cases__card-number {
+      font-size: 22px;
+      line-height: 140%;
+      color: #F3F3F3;
+    }
 
-.cases__card-name {
-  font-size: 70px;
-  line-height: 110%;
-  color: #F3F3F3;
-}
+    .cases__card-name {
+      font-size: 70px;
+      line-height: 110%;
+      color: #F3F3F3;
+    }
 
-@media (max-height: 850px) {
-  .cases__card-name {
-    font-size: 56px;
-  }
-}
+    @media (max-height: 850px) {
+      .cases__card-name {
+        font-size: 56px;
+      }
+    }
 
-@media (max-width: 1000px) {
-  .cases__card-name {
-    font-size: 48px;
-  }
-}
+    @media (max-width: 1000px) {
+      .cases__card-name {
+        font-size: 48px;
+      }
+    }
 
-.cases__card-img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  opacity: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
+    .cases__card-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      -o-object-fit: cover;
+      object-fit: cover;
+      -o-object-position: center;
+      object-position: center;
+      opacity: 0;
+      -webkit-transition: .3s;
+      transition: .3s;
+    }
 
-@media (max-width: 1000px) {
-  .cases__card-img {
-    opacity: 1;
-  }
-}
+    @media (max-width: 1000px) {
+      .cases__card-img {
+        opacity: 1;
+      }
+    }
   </style>
 </head>
 
@@ -543,6 +546,97 @@
             </div>
           </div>
         </div>
+        <div class="section pp-scrollable slide-dark-footer slide-personal-BLOG">
+          <div class="slide-container">
+            <!-- <div class="slide-bg">
+              <div class="slide-photo circle-green slide-BLOG-circle1 transformLeft"></div>
+              <div class="slide-photo circle-brown slide-BLOG-circle2 transformRight"></div>
+            </div> -->
+            <div class="container">
+              <div class="slide-num">About Us</div>
+              <div class="row align-items-center animate-element delay5 fadeInDown">
+                <div class="col-md-7">
+                  <h2 class="slide-title mb-5 mb-md-0">Your Search Ends Here
+                  </h2>
+                </div>
+                <div class="col-md-5">
+                  <!-- <h3 class="slide-title-info mb-5 mb-md-0">Professional BLOG I’ve reached during <span
+                      class="text-primary">my working times.</span></h3> -->
+                </div>
+              </div>
+              <div class="row award-list animate-element delay5 fadeInUp">
+                <div class="col-md-12">
+                  <div class="py-5 service-35 wrap-service35-box">
+                    <div class="row no-gutters">
+                      <div class="col-lg-5 col-md-5 align-self-center">
+                      
+                      </div>
+                      <div class="col-lg-7 col-md-7">
+                        <div class="feature-35-owl owl-carousel owl-theme">
+                          <div class="item">
+                            <div class="card border-0 mb-4">
+                              <div class="card-body">
+                                <div class="mb-4 icon-round text-center d-inline-block rounded-circle bg-light-info">1
+                                </div>
+                                <div class="service-item">
+                                  <div class="service-item-title slide-title-sub">Comprehensive <br> &nbsp;</div>
+                                  <div class="service-item-descr slide-descr text-black more1">InvestLytics’s intelligent algorithms automatically handle all the complex tasks for you. InvestLytics offers all major investment management tools and market analytics in a single platform.
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="card border-0 mb-4">
+                              <div class="card-body">
+                                <div class="mb-4 icon-round text-center d-inline-block rounded-circle bg-light-info">2
+                                </div>
+                                <div class="service-item">
+                                  <div class="service-item-title slide-title-sub">COMPLIANCE FIRST<br> &nbsp;</div>
+                                  <div class="service-item-descr slide-descr text-black more1">InvestLytics is at the forefront of regulatory requirements, keeping up to date with SEBI <br> guidelines.   From mandatory reporting to risk profiling and tracking, we offer greater portfolio transparency to both advisors and investors.   
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="card border-0 mb-4">
+                              <div class="card-body">
+                                <div class="mb-4 icon-round text-center d-inline-block rounded-circle bg-light-info">3
+                                </div>
+                                <div class="service-item">
+                                  <div class="service-item-title slide-title-sub">ADVANCED ANALYTICS AND MANAGEMENT</div>
+                                  <div class="service-item-descr slide-descr text-black more1">Market analytics at even macroeconomic levels. Compare multiple stocks on NSE/BSE with fundamental analysis, corporate actions, broker view, etc. View all your documents library with complete details on mutual funds such as objectives, strategy, managers, entry and exit load, risk metrics and performance from within you investment dashboard.
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="card border-0 mb-4">
+                              <div class="card-body">
+                                <div class="mb-4 icon-round text-center d-inline-block rounded-circle bg-light-info">4
+                                </div>
+                                <div class="service-item">
+                                  <div class="service-item-title slide-title-sub">FREEDOM AND SECURITY<br> &nbsp;</div>
+                                  <div class="service-item-descr slide-descr text-black more1">InvestLytics gives you the freedom to choose your own advisors, trading and banking partners plus the platform is audited and certified by independent third party security firms and is fully GDPR compliant.
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="section pp-scrollable-2 slide-dark-footer slide-personal-BLOG">
           <div class="slide-container">
             <!-- <div class="slide-bg">
@@ -716,26 +810,37 @@
                                   <div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-home"
                                     role="tabpanel" aria-labelledby="v-pills-home-tab">
                                     <h4 class="">COMPREHENSIVE</h4>
-                                    <p class="">InvestLytics’s intelligent algorithms automatically handle all the complex tasks for you. InvestLytics offers all major investment management tools and market analytics in a single platform.
+                                    <p class="">InvestLytics’s intelligent algorithms automatically handle all the
+                                      complex tasks for you. InvestLytics offers all major investment management tools
+                                      and market analytics in a single platform.
                                     </p>
                                   </div>
 
                                   <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-profile"
                                     role="tabpanel" aria-labelledby="v-pills-profile-tab">
                                     <h4 class="">COMPLIANCE FIRST</h4>
-                                    <p class="">InvestLytics is at the forefront of regulatory requirements, keeping up to date with SEBI guidelines. From mandatory reporting to risk profiling and tracking, we offer greater portfolio transparency to both advisors and investors. </p>
+                                    <p class="">InvestLytics is at the forefront of regulatory requirements, keeping up
+                                      to date with SEBI guidelines. From mandatory reporting to risk profiling and
+                                      tracking, we offer greater portfolio transparency to both advisors and investors.
+                                    </p>
                                   </div>
 
                                   <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-messages"
                                     role="tabpanel" aria-labelledby="v-pills-messages-tab">
                                     <h4 class="">ADVANCED ANALYTICS AND MANAGEMENT:</h4>
-                                    <p class="">Market analytics at even macroeconomic levels. Compare multiple stocks on NSE/BSE with fundamental analysis, corporate actions, broker view, etc. View all your documents library with complete details on mutual funds such as objectives, strategy, managers, entry and exit load, risk metrics and performance from within you investment dashboard.</p>
+                                    <p class="">Market analytics at even macroeconomic levels. Compare multiple stocks
+                                      on NSE/BSE with fundamental analysis, corporate actions, broker view, etc. View
+                                      all your documents library with complete details on mutual funds such as
+                                      objectives, strategy, managers, entry and exit load, risk metrics and performance
+                                      from within you investment dashboard.</p>
                                   </div>
 
                                   <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-settings"
                                     role="tabpanel" aria-labelledby="v-pills-settings-tab">
                                     <h4 class="">FREEDOM AND SECURITY</h4>
-                                    <p class="">nvestLytics gives you the freedom to choose your own advisors, trading and banking partners plus the platform is audited and certified by independent third party security firms and is fully GDPR compliant. 
+                                    <p class="">nvestLytics gives you the freedom to choose your own advisors, trading
+                                      and banking partners plus the platform is audited and certified by independent
+                                      third party security firms and is fully GDPR compliant.
                                     </p>
                                   </div>
                                 </div>
@@ -750,6 +855,8 @@
             </div>
           </div>
         </div>
+
+
         <div class="section pp-scrollable slide-personal-services">
           <div class="slide-container">
             <div class="slide-bg">
@@ -988,32 +1095,38 @@
                         <div class="cases__text">
                           <div class="cases__card-number">01</div>
                           <div class="cases__card-name">Section</div>
-                        </div><img class="cases__card-img" src="img/cases/img1.jpg" alt="img"></a>
+                        </div><img class="cases__card-img" src="img/cases/img1.jpg" alt="img">
+                      </a>
                       <!-- Case card--><a class="cases__card js-cases-card" href="#">
                         <div class="cases__text">
                           <div class="cases__card-number">02</div>
                           <div class="cases__card-name">Section</div>
-                        </div><img class="cases__card-img" src="img/cases/img2.jpg" alt="img"></a>
+                        </div><img class="cases__card-img" src="img/cases/img2.jpg" alt="img">
+                      </a>
                       <!-- Case card--><a class="cases__card js-cases-card" href="#">
                         <div class="cases__text">
                           <div class="cases__card-number">03</div>
                           <div class="cases__card-name">Section</div>
-                        </div><img class="cases__card-img" src="img/cases/img3.jpg" alt="img"></a>
+                        </div><img class="cases__card-img" src="img/cases/img3.jpg" alt="img">
+                      </a>
                       <!-- Case card--><a class="cases__card js-cases-card" href="#">
                         <div class="cases__text">
                           <div class="cases__card-number">04</div>
                           <div class="cases__card-name">Section</div>
-                        </div><img class="cases__card-img" src="img/cases/img4.jpg" alt="img"></a>
+                        </div><img class="cases__card-img" src="img/cases/img4.jpg" alt="img">
+                      </a>
                       <!-- Case card--><a class="cases__card js-cases-card" href="#">
                         <div class="cases__text">
                           <div class="cases__card-number">05</div>
                           <div class="cases__card-name">Section</div>
-                        </div><img class="cases__card-img" src="img/cases/img5.jpg" alt="img"></a>
+                        </div><img class="cases__card-img" src="img/cases/img5.jpg" alt="img">
+                      </a>
                       <!-- Case card--><a class="cases__card js-cases-card" href="#">
                         <div class="cases__text">
                           <div class="cases__card-number">06</div>
                           <div class="cases__card-name">Section</div>
-                        </div><img class="cases__card-img" src="img/cases/img6.jpg" alt="img"></a>
+                        </div><img class="cases__card-img" src="img/cases/img6.jpg" alt="img">
+                      </a>
                     </div>
                   </div>
                 </div>

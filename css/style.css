@@ -2517,3 +2517,24 @@ a:hover .center-icon i {
 .mr-18 {
 	margin-right: 18%;
 }
+
+
+
+
+
+
+.service-35.wrap-service35-box .feature-35-owl .item {
+  position: relative;
+}
+
+/* .service-35.wrap-service35-box .feature-35-owl .item h5 {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+} */
+
+.service-35 .max-500 {
+    max-width: 500px;
+}
