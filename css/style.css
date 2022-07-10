@@ -1379,7 +1379,7 @@ label.error {
 .slide-personal-intro {
 	/* background-image: url("../images/Group\ 21.jpg"); */
 	/* background-image: url("../images/Group\ 30.jpg"); */
-	background-image: url("../images/headerimg.jpg");
+	/* background-image: url("../images/headerimg.jpg"); */
 	/* background-image: url("../images/Group\ 30.svg"); */
 	/* background-image: url("../images/Group\ 28.jpg"); */
 	/* background-image: url("../images/Group\ 24\ 1.jpg"); */
@@ -1387,7 +1387,18 @@ label.error {
 	/* background-image: url("../img/bg-personal-intro.png"); */
 	background-size: cover;
 }
-
+#particles-js{
+	width: 100%;
+	background-image: url("../images/headerimg.jpg");
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+  }
+  
+  canvas {
+	position: absolute;
+	top: 0vh;
+  }
 .slide-bg {
 	position: absolute;
 	left: 0;
